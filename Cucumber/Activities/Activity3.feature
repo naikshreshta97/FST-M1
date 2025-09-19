@@ -29,7 +29,7 @@ Feature: Testing with Tags
     And Close the alert
     And Read the result text
 
-  # An alternate approach using Scenario outline
+ 
   Scenario Outline:
     Given User is on the page
     When User clicks the <Type> Alert button
@@ -42,3 +42,4 @@ Feature: Testing with Tags
     | Simple |
     | Confirmation |
     | Prompt  |
+
