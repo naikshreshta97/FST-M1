@@ -20,7 +20,17 @@ Feature: Testing with Tags
     And Read the result text
 
   @PromptAlert
-  Scenario Outline: Test for Prompt Alert
+  Scenario: Test for Prompt Alert
+    Given User is on the page
+    When User clicks the Prompt Alert button
+    Then Alert opens
+    And Read the text from it and print it
+    And Write a custom message in it
+    And Close the alert
+    And Read the result text
+
+  # An alternate approach using Scenario outline
+  Scenario Outline:
     Given User is on the page
     When User clicks the <Type> Alert button
     Then Alert opens
