@@ -21,7 +21,7 @@ public class GitHubProjTest {
 	 * https://api.github.com/user/keys/{keyId}
 	 */
 	//SSH key to test with
-	String sshKey="ssh-ed25519 ***********************";
+	String sshKey="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB79G6tPC6IARu5/4ycnJiNTyERhE3fKLbpZrolNadY3";
 	//Temp variable to store keyId
 	int keyId;	
 	//Declare the req and resp specification
@@ -35,7 +35,7 @@ public class GitHubProjTest {
 		requestSpec= new RequestSpecBuilder()
 				.setBaseUri("https://api.github.com/user/keys")
 				.addHeader("Content-type", "application/json")
-				.addHeader("Authorization", "token **********************")
+				.addHeader("Authorization", "token")
 				.addHeader("X-GitHub-Api-Version", "2022-11-28")
 				.build();
 		//Initialize the response specification
@@ -78,3 +78,4 @@ public class GitHubProjTest {
     }
 
 }
+
